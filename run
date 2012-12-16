@@ -1,0 +1,12 @@
+#!/bin/bash
+
+export GEM_PATH="$(pwd)/gems"
+export GEM_HOME="$(pwd)/gems"
+
+ARG_CMD="$1"
+if [ $(basename "$1") = "$1" ]; then
+  ARG_CMD="gems/bin/$1"
+fi
+shift
+
+exec "$ARG_CMD" "$@"
