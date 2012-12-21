@@ -1,1 +1,5 @@
 factory_girl: latest
+jbuilder: latest
+simple_form: latest
+vcr: latest
+
