@@ -1,0 +1,6 @@
+#!/bin/bash
+
+export GEM_PATH="$(pwd)/gems"
+export GEM_HOME="$(pwd)/gems"
+
+bundle exec gem install --no-ri --no-rdoc --verbose "$@"
